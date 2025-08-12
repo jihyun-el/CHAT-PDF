@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-community
+langchain-huggingface
+langchain-openai
+faiss-cpu  # 또는 faiss-gpu
+huggingface-hub
+transformers
+openai
+pypdf
+python-dotenv
+torch  # HuggingFace 임베딩용
+sentence-transformers  # 모델 로드용 (선택적)
