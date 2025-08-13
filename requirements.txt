@@ -1,13 +1,14 @@
 streamlit
 langchain
 langchain-community
-langchain-huggingface
 langchain-openai
 faiss-cpu  # 또는 faiss-gpu
 huggingface-hub
-transformers
 openai
 pypdf
 python-dotenv
-torch  # HuggingFace 임베딩용
+torch==2.3.1
+transformers==4.41.2
+sentence-transformers==3.0.1
+langchain-huggingface==0.0.3
 sentence-transformers  # 모델 로드용 (선택적)
