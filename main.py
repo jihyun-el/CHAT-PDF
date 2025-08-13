@@ -11,7 +11,10 @@ from dotenv import load_dotenv, find_dotenv  # ✅ 추가
 # ✅ .env 로드 (앱 시작 시 1회)
 load_dotenv(find_dotenv(), override=False)
 
-embedding_model = HuggingFaceEmbeddings(model_name="distiluse-base-multilingual-cased-v1")
+embedding_model = HuggingFaceEmbeddings(
+    model_name="distiluse-base-multilingual-cased-v1",
+    model_kwargs={'device': 'cpu'}  # 추가
+)
 
 def vectorize(pdf):
     # BytesIO를 임시 파일로 저장
@@ -111,3 +114,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
